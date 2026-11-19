@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Hub</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: white;
+}
+header {
+  background: #080808;
+  padding: 22px;
+  text-align: center;
+  border-bottom: 2px solid gold;
+}
+header h1 {
+  color: gold;
+  margin: 0;
+}
+header p { color: #bbb; }
+.hero {
+  text-align: center;
+  padding: 55px 15px;
+  background: linear-gradient(120deg,#252525,#090909);
+}
+.hero h2 {
+  font-size: 32px;
+  color: gold;
+}
+.hero p { color: #ddd; }
+.container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #202020;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #444;
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: gold;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.info { padding: 15px; }
+.info h3 { color: gold; }
+.price {
+  color: #00e676;
+  font-weight: bold;
+  font-size: 19px;
+}
+button {
+  background: gold;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  background: #080808;
+  text-align: center;
+  padding: 25px;
+  margin-top: 35px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🚘 MS LUXURY CARS</h1>
+<p>Premium Cars | Luxury Lifestyle</p>
+</header>
+
+<section class="hero">
+<h2>Find Your Dream Car</h2>
+<p>Explore the world's most beautiful luxury cars.</p>
+</section>
+
+<div class="container">
+<h2 style="color:gold;text-align:center">
+Our Premium Collection
+</h2>
+
+<div class="cars">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" alt="BMW">
+<div class="info">
+<h3>BMW 3 Series</h3>
+<p>Luxury Sedan</p>
+<p class="price">৳ 1.95 Crore</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800" alt="Mercedes">
+<div class="info">
+<h3>Mercedes-Benz</h3>
+<p>Luxury Sedan</p>
+<p class="price">৳ 1.25 Crore*</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800" alt="Audi">
+<div class="info">
+<h3>Audi A6</h3>
+<p>Premium Sedan</p>
+<p class="price">৳ 80 Lakh*</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800" alt="Toyota">
+<div class="info">
+<h3>Toyota Land Cruiser</h3>
+<p>Premium SUV</p>
+<p class="price">৳ 2.89 Crore*</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800" alt="Lamborghini">
+<div class="info">
+<h3>Lamborghini</h3>
+<p>Super Sports Car</p>
+<p class="price">৳ 5 Crore+*</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800" alt="Ferrari">
+<div class="info">
+<h3>Ferrari</h3>
+<p>Super Sports Car</p>
+<p class="price">৳ 4 Crore+*</p>
+<button onclick="alert('Contact MS Luxury Cars for details')">Details</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+<h3 style="color:gold">MS LUXURY CARS</h3>
+<p>Owner: Shahriar</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
